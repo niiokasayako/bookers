@@ -22,3 +22,5 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+DMM WEBCAMPの学習コンテンツアプリケーション作成してみよう：基礎編の研修課題です。
