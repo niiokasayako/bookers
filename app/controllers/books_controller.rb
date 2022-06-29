@@ -29,7 +29,6 @@ class BooksController < ApplicationController
       book = Book.find(params[:id])
       book.update(book_params)
       redirect_to book_path(book.id)
-      flash[:notice] = "successfully"
   end
   
   
@@ -45,9 +44,10 @@ class BooksController < ApplicationController
   def update
     @book = Book.new(book_params)
     if @book.save
+     flash[:notice] = "Book was successfully update."
       redirect_to book_path(@book.id)
     else
-      render :new
+      render :edit
     end  
   end
   
