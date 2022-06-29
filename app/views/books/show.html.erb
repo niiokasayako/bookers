@@ -1,12 +1,15 @@
 <%= form_with model: @book do |f| %>
-<h3>Title:</h3>
-<p><%= @book.title %></p>
+<div class = "show-content">
+  <h4>Title:</h4>
+    <p><%= @book.title %></p>
+</div>
 
-<h3>Body:</h3>
-<p><%= @book.body %></p>
-
-<%= link_to "edit", "/books/#(book.id)"  %>
-
-<a href = "/books">Back</a>
-
+<div class = "show-content">
+  <h3>Body:</h3>
+    <p><%= @book.body %></p>
+ </div>
+    
+        <a class = "buttom"><%= link_to "Edit", "/books/#(book.id)"  %></a>
+        <span>|</span>
+        <a class = "buttom" a href = "/books">Back</a>
 <% end %>
