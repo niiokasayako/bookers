@@ -58,10 +58,12 @@ input[type="submit"] {
   padding: 1px 6px;
 }
 
-.edit:hover {
+a:hover {
   color: white;
   background-color: black;
 }
+
+
 
 .buttom:hover {
   color: white;
