@@ -11,14 +11,21 @@
 
 <%= form_with model: @book, url: update_book_path(@book.id), method: :patch do |f| %>
 
-<p>Title</p>
-<%= f.text_field :title %>
+<div class = "field">
+  <p>Title</p>
+   <%= f.text_field :title %>
+</div>
 
-<p>Body</p>
-<%= f.text_area :body %>
+<div class = "field">
+  <p>Body</p>
+    <%= f.text_area :body %>
+</div>
+
 <div class ="actions">
   <%= f.submit 'Update Book' %>
 </div>
+
+
 <p><%= link_to "show", book_path(@book.id) %>
   <span>|</span> 
 <%= link_to "Back", :back %></p>

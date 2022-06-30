@@ -9,7 +9,10 @@
     <p><%= @book.body %></p>
  </div>
     
-        <a class = "buttom"><%= link_to "Edit", "/books/#(book.id)"  %></a>
+  
+        <p><%= link_to "Edit", edit_book_path(@book.id) %>
         <span>|</span>
         <a class = "buttom" a href = "/books">Back</a>
+        </p>
+  
 <% end %>
