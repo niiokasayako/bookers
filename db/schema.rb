@@ -12,12 +12,6 @@
 
 ActiveRecord::Schema.define(version: 2022_06_16_075917) do
 
-  create_table "active_storage_variant_records", force: :cascade do |t|
-    t.integer "blob_id", null: false
-    t.string "variation_digest", null: false
-    t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
-  end
-
   create_table "books", force: :cascade do |t|
     t.string "title"
     t.string "body"
@@ -25,5 +19,4 @@ ActiveRecord::Schema.define(version: 2022_06_16_075917) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
 end
